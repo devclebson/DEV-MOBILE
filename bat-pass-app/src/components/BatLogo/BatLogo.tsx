@@ -6,14 +6,16 @@ export function BatLogo() {
   return (
     <>
         <Text style={styles.title}>
-            Bat Pass Generator
+            BAT PASS GENERATOR
         </Text>
-        <Image style={{
-          resizeMode: 'contain',
-          height:180
-        }} 
-        source={require('../../../assets/bat-logo.png')}
-        />
+        <View style={styles.imageShadowWrapper}>
+          <Image style={{
+            resizeMode: 'contain',
+            height:180,
+          }} 
+          source={require('../../../assets/bat-logo.png')}
+          />
+        </View>
     </>
   );
 }
